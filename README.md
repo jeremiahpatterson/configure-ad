@@ -34,6 +34,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 8 - Join Client to the domain
 - Step 9 - Set up Remote Desktop for non-admin users within the Client
 - Step 10 - (Optional) Create testing Users with PowerShell Script.
+- Step 11 - Task Complete
 
 <h2>Deployment and Configuration Steps</h2>
 
