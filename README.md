@@ -136,7 +136,7 @@ Make the User a Domain Admin. In the Active Directory Users and Computers, click
 <img src="https://i.imgur.com/lvjQcdb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Now, let's join the Client to the Domain. Log in to the Client VM in Windows. Go to Settings > About > Rename this PC (advanced) > Change > select Domain and enter the domain name > OK. Finally, enter the Domain Admin credentials.
+Now, let's join the Client to the Domain. Log in to the Client VM in Windows. Right-click Start menu > Go to Systems > About > Rename this PC (advanced) > Change > select Domain and enter the domain name > OK. Finally, enter the Domain Admin credentials.
 </p>
 <br />
 
