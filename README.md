@@ -48,7 +48,7 @@ After creating the Resource Group, proceed to creating your virtual machine. Cho
 </p>
 <p>
 Once in the Networking Section, create a new Virtual Network by clicking Create new in the Virtual Network section, name the new VNet, press OK, followed by Review + Create. When on the next page, if the validation passes, click Create. Now repeat the process to create the Client VM, but use a non-server version of Windows. In this example, we used Windows 10 Enterprise, version 22H2 - x64 Gen2.
-Also, when on the network page, choose the Virtual Network you created.
+Also, when on the network page, choose the Virtual Network you created during the dc-1 VM.
 </p>
 <br />
 
@@ -64,7 +64,7 @@ Now we need to set the dc-1 VM private IP to Static. Enter the dc-1 VM on Azure 
 <img src="https://i.imgur.com/vRRQPej.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Time to set the Client DNS settings. Enter the Client VM on Azure > Network Settings > Network Interface/ IP configuration > DNS servers. Select Custom and enter dc-1 private IP address.  
+Time to set the Client DNS settings. Enter the Client VM on Azure > Network Settings > Network Interface/ IP configuration > DNS servers. Select Custom and enter dc-1 private IP address then click Save.  
 </p>
 <br />
 
@@ -120,7 +120,7 @@ Let's create an Organizational Unit (OU). Click on Start > Windows Administrativ
 <img src="https://i.imgur.com/uUSwzQ8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Time to create a Domain Admin User. In the Active Directory Users and Computers, right-click on the _EMPLOYEES folder > New > User. Fill in the user information and press Next.
+Time to create a Domain Admin User. In the Active Directory Users and Computers, for this example, right-click on the _EMPLOYEES folder > New > User. Fill in the user information and press Next.
 </p>
 <br />
 
@@ -152,6 +152,6 @@ Let's configure the Remote Desktop for Domain Users. In the Client VM in Windows
 <img src="https://i.imgur.com/JwJnhUl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Optional: Add test users with PowerShell ISE script. Copy raw [script code](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) > open PowerShell ISE on the dc-1 VM in Windows. Click New, paste the script, and click Run. The script will start generating users.
+Optional: Add test users with PowerShell ISE script. Copy raw script code (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) > open PowerShell ISE on the dc-1 VM in Windows. Click New, paste the script, and click Run. The script will start generating users.
 </p>
 <br />
